@@ -1,0 +1,53 @@
+/* Red, white, and blue color scheme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000; /* Black text for readability */
+    padding: 20px;
+}
+
+h1 {
+    color: #0033cc; /* Bold blue for the heading */
+    animation: fadeIn 2s ease-in; /* Fade-in animation for heading */
+}
+
+
+ p {
+    background-color: #ffffff; /* White background */
+    color: #cc0000; /* Red text */
+    padding: 10px;
+    border-left: 5px solid #0033cc; /* Blue accent on the side */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: fit-content;
+    margin-bottom: 10px;
+    opacity: 0; /* Start hidden for animation */
+    animation: fadeInParagraph 2s ease-in forwards;
+    animation-delay: 0.5s;
+}
+   
+
+
+/* Keyframes for heading fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for paragraph fade-in */
+@keyframes fadeInParagraph {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
